@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Microsoft JhengHei', 'PingFang', Charcoal;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+ .word {
+    color: #777777;
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #24587F;
+    color: #F2FAFE;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.classword{
+    color:#1B415D;
+    font-weight: 600;
+}
+.classword:hover{
+    transform: scale(0.9,0.9);
+    animation: class 1s;
+}
+@keyframes class{
+    from{
+        transform: scale(1,1);
+    }
+    to{
+        transform: scale(0.9,0.9);
+    }
+}
+
+.classword2 {
+    color: #777777;
+    font-size: 12px;
+}
+
+.card:hover{
+    transform: scale(0.95,0.95);
+    animation: card 1s;
+}
+@keyframes card{
+    from{
+        transform: scale(1,1);
+    }
+    to{
+        transform: scale(0.95,0.95);
+    }
+}
+
+.comtitle{
+    color: #24587F;
+    font-size: 20px;
+    font-weight: 800;
+    word-wrap: none;
+}
+
+.comstart{
+    color: #F4D35E;
+    font-size: 18px;
+    word-wrap: none;
+}
+
+.comtext{
+    color: #777777;
+    font-size: 14px;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -60%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-15%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}

@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel=stylesheet type="text/css" href="css/navbar.css">
+    <link rel=stylesheet type="text/css" href="css/index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+            $('.navbar').css({
+                "background-color": "rgba(163,195,224,0)", "transition": "0.5s"
+            })
+            $(window).scroll(function () {
+                var tall = $(window).scrollTop();
+                if (tall >= 500) {
+                    $('.navbar').css({
+                        "background-color": "rgba(163,195,224,1)",
+                    })
+                } else {
+                    $('.navbar').css({
+                        "background-color": "rgba(163,195,224,0)"
+                    })
+                }
+            })
+        });
+    </script>
+
+    <title>EZ Learn</title>
+    <link rel="shortcut icon" href="images/icon.png">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- 導覽列 -->
+        <div class="row navbar navbar-expand fixed-top navbg">
+            <div class="col-3 text-center pt-2">
+                <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            </div>
+            <div class="col-9 d-flex justify-content-end pl-5 pt-3 pb-3 pb-sm-0">
+                <ul class="navbar-nav list-unstyled">
+                    <li class="nav-item mr-4 hide-in-phone">
+                        <p class="badge bagde-pill bg-white searchtext">
+                            <input type="text" placeholder="請輸入課程關鍵字" class="border-0 rounded-pill">
+                            <button class="navbtn" type="button">
+                                <span class="fas fa-search"></span>
+                            </button>
+                        </p>
+                    </li>
+                    <li class="nav-item"><a href="#" class="navword d-none d-md-block">登入</a></li>
+                    <li class="nav-item pl-2 pr-3"><a href="#" class="navword d-none d-md-block">註冊</a></li>
+                    <div class="dropdown">
+                        <button type="button" class="navbtn" data-toggle="dropdown">
+                            <span class="fas fa-bars"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right border-0">
+                            <a href="code.html" class="dropdown-item text-right"><i class="fas fa-code pr-3"></i>程式</a>
+                            <a href="language.html" class="dropdown-item text-right"><i
+                                    class="fas fa-language pr-3"></i>語言</a>
+                            <a href="design.html" class="dropdown-item text-right"><i
+                                    class="fas fa-paint-brush pr-3"></i>設計</a>
+                            <a href="cooking.html" class="dropdown-item text-right"><i
+                                    class="fas fa-cookie-bite pr-3"></i>料理</a>
+                            <a href="finance.html" class="dropdown-item text-right"><i
+                                    class="fas fa-money-check-alt pr-3"></i>理財</a>
+                            <a href="music.html" class="dropdown-item text-right"><i
+                                    class="fas fa-music pr-3"></i>音樂</a>
+                            <a href="#" class="dropdown-item d-md-none text-center navbtn">登入</a>
+                            <a href="#" class="dropdown-item d-md-none text-center navbtn">註冊</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="row">
+            <div class="col p-0">
+                <div class="carousel slide mb-5" data-ride="carousel" data-interval="5000" id="show">
+                    <ul class="carousel-indicators">
+                        <li data-target="#show" data-slide-to="0"></li>
+                        <li data-target="#show" data-slide-to="0"></li>
+                        <li data-target="#show" data-slide-to="0"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/slide2.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item"><img src="images/slide1.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item"><img src="images/slide3.jpg" alt="" class="img-fluid "></div>
+
+                    </div>
+                    <a href="#show" class="carousel-control-prev" data-slide="prev"><span
+                            class="carousel-control-prev-icon"></span></a>
+                    <a href="#show" class="carousel-control-next" data-slide="next"><span
+                            class="carousel-control-next-icon"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 word text-center mt-5 mb-3">
+                <p class="wow slideInDown" data-wow-duration="1s">
+                    讓學習像遊戲一樣有趣<br>Make
+                    learning as
+                    fun as game.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="arrow text-center wow slideInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <span class="fas fa-chevron-down wow slideInDown" data-wow-duration="1s"
+                        data-wow-delay="0.1s"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 課程分類 -->
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 pt-5 d-flex justify-content-center">
+                <a href="code.html" style="text-decoration: none">
+                    <img src="images/code.jpg" width="250px">
+                    <h5 class="text-center classword">程式 Program</h5>
+                </a>
+            </div>
+            <div class="col-12 col col-md-6 col-lg-4 pt-5 d-flex justify-content-center">
+                <a href="language.html" style="text-decoration: none">
+                    <img src="images/language.jpg" width="250px">
+                    <h5 class="text-center classword">語言 Language</h5>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 pt-5 d-flex justify-content-center">
+                <a href="design.html" style="text-decoration: none">
+                    <img src="images/design.jpg" width="250px">
+                    <h5 class="text-center classword">設計 Design</h5>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center">
+                <a href="cooking.html" style="text-decoration: none">
+                    <img src="images/cook.jpg" width="250px">
+                    <h5 class="text-center classword">料理 Cooking</h5>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center">
+                <a href="finance.html" style="text-decoration: none">
+                    <img src="images/investing.jpg" width="250px">
+                    <h5 class="text-center classword">理財 Finance</h5>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center">
+                <a href="music.html" style="text-decoration: none">
+                    <img src="images/music.jpg" width="250px" class="wow ">
+                    <h5 class="text-center classword">音樂 Music</h5>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- 熱門課程 -->
+        <div class="row d-flex justify-content-center mb-5">
+            <div class="row   mt-5">
+                <div class="col-12 word text-center mt-5 mb-3">
+                    <p class="wow slideInDown" data-wow-duration="1s">熱門課程<br>Popular Course</p>
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-5">
+                    <div class="arrow text-center wow slideInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <span class="fas fa-chevron-down wow slideInDown" data-wow-duration="1s"
+                            data-wow-delay="0.1s"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-md-flex justify-content-center mt-5">
+            <div class="col-8 col-md-3 card mt-5 pl-3 ml-md-4">
+                <img src="images/class1.jpg" class="card-img mt-3">
+                <div class="card-body">
+                    <p class="badge badge-pill badge-info">料理</p>
+                    <h5 class="card-title">輕鬆製作美味義式冰淇淋</h5>
+                    <p class="h6 card-text classword2">Lily's Kitchen Class</p>
+                </div>
+            </div>
+            <div class="col-8 col-md-3 card mt-5 pl-3 ml-md-4">
+                <img src="images/class2.jpg" class="card-img mt-3">
+                <div class="card-body">
+                    <p class="badge badge-pill badge-light">設計</p>
+                    <h5 class="card-title">服裝設計 : 基礎打版</h5>
+                    <p class="h6 card-text classword2">elegant no.33</p>
+                </div>
+            </div>
+            <div class="col-8 col-md-3 card mt-5 pl-3 ml-md-4">
+                <img src="images/class3.jpg" class="card-img mt-3">
+                <div class="card-body">
+                    <p class="badge badge-pill badge-success">理財</p>
+                    <h5 class="card-title">上班族的存股投資術</h5>
+                    <p class="h6 card-text classword2">理財大王</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 最佳評論區 -->
+        <div class="row  mt-5">
+            <div class="col-12 word text-center mt-5 mb-3">
+                <p class="wow slideInDown" data-wow-duration="1s">學習心得分享<br>Learning to share.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center mb-5">
+                <div class="arrow text-center wow slideInDown" data-wow-duration="1s" data-wow-delay="0.1s">
+                    <span class="fas fa-chevron-down wow slideInDown" data-wow-duration="1s"
+                        data-wow-delay="0.1s"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-3 col-md-1">
+                <img src="images/model2.png" class="wow zoomIn" width="80px">
+            </div>
+            <div class="col-7 col-md-3 ml-0 ml-md-5 ml-lg-1">
+                <h6 class="comtitle wow slideInLeft">宋慧玲</h6>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.7s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.8s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.8s">&#9733</span>
+                <hr>
+                <p class="comtext wow slideInLeft">
+                    受益良多，老師的講解淺顯易懂，非常之精闢。<b>且每一個課程都有實際的操作與範例程式碼</b>，此課程真是買得物超所值，非常感謝。</p>
+            </div>
+            <div class="col-3 col-md-1 mt-5 mt-sm-0">
+                <img src="images/model3.png" class="wow zoomIn" width="80px">
+            </div>
+            <div class="col-7 col-md-3 ml-0 ml-md-5 ml-lg-1">
+                <h6 class="comtitle mt-5 mt-sm-0 wow slideInLeft">路易斯</h6>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.7s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.8s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.8s">&#9733</span>
+                <hr>
+                <p class="comtext wow slideInLeft">老師都是一步一步帶觀念，作業有問題還可以不斷的詢問和優化，能知道自己問題點在哪裡，再進行複習。</p>
+            </div>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-3 col-md-1">
+                <img src="images/model4.png" class="wow zoomIn" width="80px">
+            </div>
+            <div class="col-7 col-md-3 ml-0 ml-md-5 ml-lg-1">
+                <h6 class="comtitle wow slideInLeft">喬納森 · 威瑪</h6>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.7s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.8s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.8s">&#9733</span>
+                <hr>
+                <p class="comtext wow slideInLeft"><b>自己摸索2個月直接現抵上課2周的效率!</b></p>
+            </div>
+            <div class="col-3 col-md-1 mt-5 mt-sm-0">
+                <img src="images/model1.png" class="wow zoomIn" width="80px">
+            </div>
+            <div class="col-7 col-md-3 ml-0 ml-md-5 ml-lg-1">
+                <h6 class="comtitle mt-5 mt-sm-0 wow slideInLeft">維琪 · 珀西</h6>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.6s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.7s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.8s">&#9733</span>
+                <span class="pb-3 comstart wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.8s">&#9733</span>
+                <hr>
+                <p class="comtext wow slideInLeft">對響應式網頁有很扎實的教學，而且講解友善，不僅大大降低學習曲線，同時也很適合新人入門。<b>彩蛋課程非常實用！</b></p>
+            </div>
+        </div>
+
+        <!-- 資訊欄 -->
+        <div class="row mt-5">
+            <div class="col-12 pt-3 mb-0 text-center footbg">
+                <p>&copy; 2019 EZ Learn</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

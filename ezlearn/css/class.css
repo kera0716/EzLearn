@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Microsoft JhengHei', 'PingFang', Charcoal;
+}
+
+.title{
+    color: #24587F;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#code{
+    width: 100px;
+    cursor: pointer;
+}
+
+#game{
+    width: 100px;
+    cursor: pointer;
+}
+.clbtn{
+    width: 120px;
+    background-color: transparent;
+    color: rgb(95, 95, 95);
+    border: 0;
+}
+
+.grid {
+            position: relative;
+            margin: 0 auto;
+            padding: 0.5em 0;
+            max-width: 500px;
+            list-style: none;
+            text-align: center;
+        }
+
+.grid figure {
+            position: relative;
+            float: left;
+            overflow: hidden;
+            margin: 10px ;
+            min-width: 260px;
+            max-width: 420px;
+            max-height: 300px;
+            width: 50%;
+            background: #777777;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .grid figure img {
+            position: relative;
+            display: block;
+            min-height: 100%;
+            max-width: 100%;
+            opacity: 1;
+        }
+
+        .grid figure figcaption {
+            padding: 2em;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1em;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .grid figure figcaption::before,
+        .grid figure figcaption::after {
+            pointer-events: none;
+        }
+
+        .grid figure figcaption,
+        .grid figure figcaption>.heart {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid figure figcaption>.heart {
+            z-index: 1000;
+            text-indent: 200%;
+            white-space: nowrap;
+            font-size: 0;
+            opacity: 0;
+        }
+
+        .grid figure h4 {
+            word-spacing: -0.2em;
+            font-size: 15px;
+        }
+
+        .grid figure h4 span {
+            font-size: 10px;
+            color: #777777;
+            font-weight: 400;
+            margin-top: 5px;
+
+        }
+
+        .grid figure h4,
+        .grid figure p {
+            margin: 0;
+        }
+
+        .grid figure p {
+            letter-spacing: 1px;
+            font-size: 50%;
+        }
+
+        figure.class1 figcaption {
+            top: auto;
+            bottom: 0;
+            padding: 1em;
+            height: 4em;
+            background: #fff;
+            color: rgb(36, 36, 36);
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        figure.class1 h4 {
+            float: center;
+        }
+
+        figure.class1 p.icon-links .heart {
+            float: right;
+            color: #FFF1AF;
+            font-size: 2em;
+            margin: -8px;
+        }
+
+        figure.class1:hover p.icon-links .heart:hover ,
+        figure.class1:hover p.icon-links .heart:focus {
+            color: #FFDD38;
+        }
+
+
+        figure.class1 p.description {
+            position: absolute;
+            bottom: 6em;
+            padding: 2em;
+            color: #fff;
+            text-transform: none;
+            font-size: 100%;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+            /* -webkit-backface-visibility: hidden; */
+        }
+
+        figure.class1 h4,
+        figure.class1 p.icon-links .heart {
+            -webkit-transition: -webkit-transform 0.35s;
+            transition: transform 0.35s;
+            -webkit-transform: translate3d(0, 200%, 0);
+            transform: translate3d(0, 200%, 0);
+        }
+
+        figure.class1 p.icon-links .heart span::before {
+            display: inline-block;
+            padding: 8px 10px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .fas .fa-heart::before {
+            content: '';
+        }
+
+
+        .fas .fa-heart {
+            width: 5px;
+            height: 5px;
+        }
+
+        figure.class1:hover p.description {
+            opacity: 1;
+        }
+
+         figure.class1:hover img {
+            opacity: 0.3;
+        }
+
+        figure.class1:hover figcaption,
+        figure.class1:hover h4,
+        figure.class1:hover p.icon-links .heart {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        figure.class1:hover h4 {
+            -webkit-transition-delay: 0.05s;
+            transition-delay: 0.05s;
+        }
+
+        figure.class1:hover p.icon-links a:first-child {
+            -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+        }

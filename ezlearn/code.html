@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel=stylesheet type="text/css" href="css/navbar.css">
+    <link rel=stylesheet type="text/css" href="css/class.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+            $('#chide').hide();
+            $('#ghide').hide();
+            $('#code').click(function () {
+                $('#chide').slideToggle(500);
+                $('#ghide').hide();
+            })
+            $('#game').click(function () {
+                $('#chide').slideUp(500);
+                $('#ghide').slideToggle(500);
+            })
+        });
+    </script>
+
+    <title>EZ Learn</title>
+    <link rel="shortcut icon" href="images/icon.png">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- 導覽列 -->
+        <div class="row navbar navbar-expand fixed-top navbg">
+            <div class="col-3 text-center pt-2">
+                <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            </div>
+            <div class="col-9 d-flex justify-content-end pl-5 pt-3 pb-3 pb-sm-0">
+                <ul class="navbar-nav list-unstyled">
+                    <li class="nav-item mr-4 hide-in-phone">
+                        <p class="badge bagde-pill bg-white searchtext">
+                            <input type="text" placeholder="請輸入課程關鍵字" class="border-0 rounded-pill">
+                            <button class="navbtn" type="button">
+                                <span class="fas fa-search"></span>
+                            </button>
+                        </p>
+                    </li>
+                    <li class="nav-item"><a href="#" class="navword d-none d-md-block">登入</a></li>
+                    <li class="nav-item pl-2 pr-3"><a href="#" class="navword d-none d-md-block">註冊</a></li>
+                    <div class="dropdown">
+                        <button type="button" class="navbtn" data-toggle="dropdown">
+                            <span class="fas fa-bars"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right border-0">
+                            <a href="code.html" class="dropdown-item text-right"><i class="fas fa-code pr-3"></i>程式</a>
+                            <a href="language.html" class="dropdown-item text-right"><i
+                                    class="fas fa-language pr-3"></i>語言</a>
+                            <a href="design.html" class="dropdown-item text-right"><i
+                                    class="fas fa-paint-brush pr-3"></i>設計</a>
+                            <a href="cooking.html" class="dropdown-item text-right"><i
+                                    class="fas fa-cookie-bite pr-3"></i>料理</a>
+                            <a href="finance.html" class="dropdown-item text-right"><i
+                                    class="fas fa-money-check-alt pr-3"></i>理財</a>
+                            <a href="music.html" class="dropdown-item text-right"><i
+                                    class="fas fa-music pr-3"></i>音樂</a>
+                            <a href="#" class="dropdown-item d-md-none text-center navbtn">登入</a>
+                            <a href="#" class="dropdown-item d-md-none text-center navbtn">註冊</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 120px;">
+            <!-- 選單區 -->
+            <div class="col-12 col-md-2 offset-md-1">
+                <div id="code">
+                    <p class="title mt-3">程式<i class="fas fa-plus pl-5"></i></p>
+                </div>
+                <div id="chide">
+                    <ul class="list-unstyled">
+                        <li><button class="text-left clbtn" type="button">HTML & CSS</button><br></li>
+                        <li><button class="mt-1 text-left clbtn" type="button">JavaScript</button><br></li>
+                        <li><button class="mt-1 text-left clbtn" type="button">JQuery</button><br></li>
+                        <li><button class="mt-1 text-left clbtn" type="button">PHP</button><br></li>
+                        <li><button class="mt-1 text-left clbtn" type="button">C#</button><br></li>
+                        <li><button class="mt-1 text-left clbtn" type="button">MVC</button></li>
+                    </ul>
+                </div>
+                <div id="game">
+                    <p class="title">遊戲<i class="fas fa-plus pl-5"></i></p>
+                </div>
+                <div id="ghide">
+                    <ul class="list-unstyled">
+                        <li><button class="text-left clbtn" type="button">Game 1</button><br></li>
+                        <li><button class="mt-1 text-left clbtn" type="button">Game 2</button></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 課程列表 -->
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/Program_h_c.jpg" alt="" />
+                            <figcaption onclick="window.open('class.html')">
+                                <p class="icon-links">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>什麼是Html & CSS❓<br><span class="h6">3分鐘快速瞭解基礎概念</span></h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/Program_p.jpg" alt="" />
+                            <figcaption onclick="window.open('class-article.html')">
+                                <p class="icon-links">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>我想學程式<br><span class="h6">到底該從哪個語言入門?</span></h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/comingsoon.jpg" alt="" />
+                            <figcaption>
+                                <p class="icon-links bg-dark">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>期待更多課程...</h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/comingsoon.jpg" alt="" />
+                            <figcaption>
+                                <p class="icon-links bg-dark">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>期待更多課程...</h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/comingsoon.jpg" alt="" />
+                            <figcaption>
+                                <p class="icon-links bg-dark">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>期待更多課程...</h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/comingsoon.jpg" alt="" />
+                            <figcaption>
+                                <p class="icon-links bg-dark">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>期待更多課程...</h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/comingsoon.jpg" alt="" />
+                            <figcaption>
+                                <p class="icon-links bg-dark">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>期待更多課程...</h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/comingsoon.jpg" alt="" />
+                            <figcaption>
+                                <p class="icon-links bg-dark">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>期待更多課程...</h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 grid">
+                        <figure class="class1">
+                            <img src="images/comingsoon.jpg" alt="" />
+                            <figcaption>
+                                <p class="icon-links bg-dark">
+                                    <a href="#" style="position: relative;z-index: 2;" class="heart"><span
+                                            class="fas fa-heart"></span></a>
+                                </p>
+                                <h4>期待更多課程...</h4>
+                                <p class="description">快按下 &hearts; 收藏課程吧!</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 資訊欄 -->
+        <div class="row mt-5">
+            <div class="col-12 pt-3 mb-0 text-center footbg">
+                <p>&copy; 2019 EZ Learn</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

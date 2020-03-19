@@ -1,0 +1,196 @@
+.navbg{
+    height: 50px;
+}
+
+.logo img{
+    width: 100%;
+}
+.hide-in-phone{
+    display:none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Microsoft JhengHei', 'PingFang', Charcoal;
+}
+
+.logo {
+    width: 40%;
+}
+
+.navbg{
+    white-space: nowrap;
+    height:60px;
+    background-color:rgba(163,195,224,1);
+}
+
+.navword {
+    color: white;
+    font-weight: 600;
+}
+
+.navword:hover{
+    text-decoration: none;
+    border-radius: 10px;
+    color: #1B415D;
+    font-weight: 600;
+    animation: navbtn 0.8s;
+}
+@keyframes navbtn{
+    from{
+        color: white;
+    }
+    to{
+        color: #1B415D;
+    }
+}
+
+.navbtn {
+    border: 0;
+    background-color: transparent;
+    color: #FFE66D;
+    transform: scale(1,1);
+}
+
+.navbtn:hover{
+    color: #FFDD38;
+    transform: scale(1.2,1.2);
+}
+
+.searchtext {
+    width: 180px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.dropdown-menu {
+    background-color: rgba(36,88,127,0.3);
+    line-height: 30px;
+}
+
+.dropdown-menu a{
+    color:white;
+    font-weight: 600;
+}
+
+.dropdown-menu a:hover{
+    color: #24587F;
+    font-size: 18px;
+    animation: drop 0.5s;
+}
+@keyframes drop{
+    from{
+        color: white;
+        font-size: 16px;
+    }
+    to{
+        color: #24587F;
+        font-size: 18px;
+    }
+}
+
+.footbg {
+    background-color: #F2FAFE;
+    color: #24587F;
+    font-size: 12px;
+}
+
+@media only screen and (min-width:480px) {
+    .hide-in-phone { display: block; }
+}
+
+@media screen and (min-width:576px){
+    *{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Microsoft JhengHei', 'PingFang', Charcoal;
+}
+
+.logo img{
+    width: 40%;
+}
+
+.navbg{
+    white-space: nowrap;
+    height:60px;
+    background-color:rgba(163,195,224,1);
+}
+
+.navword {
+    color: white;
+    font-weight: 600;
+}
+
+.navword:hover{
+    text-decoration: none;
+    border-radius: 10px;
+    color: #1B415D;
+    font-weight: 600;
+    animation: navbtn 0.8s;
+}
+@keyframes navbtn{
+    from{
+        color: white;
+    }
+    to{
+        color: #1B415D;
+    }
+}
+
+.navbtn {
+    border: 0;
+    background-color: transparent;
+    color: #FFE66D;
+    transform: scale(1,1);
+}
+
+.navbtn:hover{
+    color: #FFDD38;
+    transform: scale(1.2,1.2);
+}
+
+.searchtext {
+    width: 180px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.dropdown-menu {
+    background-color: rgba(36,88,127,0.3);
+    line-height: 30px;
+}
+
+.dropdown-menu a{
+    color:white;
+    font-weight: 600;
+}
+
+.dropdown-menu a:hover{
+    color: #24587F;
+    font-size: 18px;
+    animation: drop 0.5s;
+}
+@keyframes drop{
+    from{
+        color: white;
+        font-size: 16px;
+    }
+    to{
+        color: #24587F;
+        font-size: 18px;
+    }
+}
+
+.footbg {
+    background-color: #F2FAFE;
+    color: #24587F;
+    font-size: 12px;
+}
+}

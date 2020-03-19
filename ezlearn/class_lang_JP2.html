@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    /
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i"
+        rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            new WOW().init();
+            window.open("test.html", "popup", "width=340,height=163,toolbar=no,status=no,resize=no");
+        })
+        function turnoff(n) {
+            var s = document.getElementById(n).style;
+            s.display = (s.display == 'none') ? '' : 'none';
+            $('html,body').animate({
+                scrollTop: 1960
+            }, 1500)
+        }
+    </script>
+
+    <style>
+        h3 {
+            background-size: auto;
+            width: 40px;
+            height: 40px;
+            color: rgb(97, 97, 97);
+            background-color: #FFE66D;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .bg {
+            background-color: rgb(196, 196, 196);
+            line-height: 40px;
+        }
+
+        i {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .expand {
+            font-size: 24px;
+            color: rgb(255, 217, 0);
+            cursor: pointer;
+            text-shadow: 2px 2px 2px rgba(248, 248, 248, 0.9);
+            line-height: 36px;
+        }
+
+        .expand:hover {
+            font-size: 28px;
+            color: rgb(255, 196, 0);
+            /* text-shadow: slategray; */
+            text-shadow: 2px 1px 2px rgba(248, 248, 248, 0.9);
+        }
+
+        /* span.showDetail {
+            float: right;
+            border: 1px solid #333;
+            font-size: 8pt;
+            margin: 10px 0 10px 0;
+            padding: 0 10px 0 10px;
+        }
+
+        span.hideDetail {
+            display: none;
+            float: right;
+            border: 1px solid #333;
+            font-size: 8pt;
+            margin: 10px 0 10px 0;
+            padding: 0 10px 0 10px;
+        } */
+    </style>
+    <title>EZ Learn</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container">
+        <div class="row navbar navbar-expand fixed-top navbg">
+            <div class="col-3 text-center pt-2">
+                <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            </div>
+            <div class="col-9 d-flex justify-content-end pl-5 pt-3 pb-3 pb-sm-0">
+                <ul class="navbar-nav list-unstyled">
+                    <li class="nav-item mr-4 hide-in-phone">
+                        <p class="badge bagde-pill bg-white searchtext">
+                            <input type="text" placeholder="請輸入課程關鍵字" class="border-0 rounded-pill">
+                            <button class="navbtn" type="button">
+                                <span class="fas fa-search"></span>
+                            </button>
+                        </p>
+                    </li>
+                    <li class="nav-item"><a href="#" class="navword d-none d-md-block">登入</a></li>
+                    <li class="nav-item pl-2 pr-3"><a href="#" class="navword d-none d-md-block">註冊</a></li>
+                    <div class="dropdown">
+                        <button type="button" class="navbtn" data-toggle="dropdown">
+                            <span class="fas fa-bars"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right border-0">
+                            <a href="code.html" class="dropdown-item text-right"><i class="fas fa-code pr-3"></i>程式</a>
+                            <a href="language.html" class="dropdown-item text-right"><i
+                                    class="fas fa-language pr-3"></i>語言</a>
+                            <a href="design.html" class="dropdown-item text-right"><i
+                                    class="fas fa-paint-brush pr-3"></i>設計</a>
+                            <a href="cooking.html" class="dropdown-item text-right"><i
+                                    class="fas fa-cookie-bite pr-3"></i>料理</a>
+                            <a href="finance.html" class="dropdown-item text-right"><i
+                                    class="fas fa-money-check-alt pr-3"></i>理財</a>
+                            <a href="music.html" class="dropdown-item text-right"><i
+                                    class="fas fa-music pr-3"></i>音樂</a>
+                            <a href="#" class="dropdown-item d-md-none text-center navbtn">登入</a>
+                            <a href="#" class="dropdown-item d-md-none text-center navbtn">註冊</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="line"></div> -->
+        <div class="row-md-6 col-lg-12">
+            <div class="col-md-6 col-lg-12 text-center">
+                <h4 class="class-title h2 mt-5 mb-4 wow fadeInDown" data-wow-duration="3s">﹉
+                    【日文動詞變化筆記】3套公式、7個型態、音變與常用18種變化 ﹍
+                    <!-- <div class="animated slideInDown"> -->
+                </h4>
+                <img src="images/japan3.jpg" alt="" class="col-md-6 col-lg-12 mt-2 mb-4 wow fadeInDown"
+                    data-wow-duration="3s">
+                <p>日文動詞的原形又稱為基本形或是字典形(字典上使用的型態)。先從原形開始看，一個動詞幾乎都由漢字接上假名組成，漢字部份稱為語幹，而假名部份則稱為語尾，且語尾的最後一個假名必定會在う(u)段。舉個例子，吃飯的「吃」，日文可說成「食べる」(たべる)，語幹是「食」，語尾是「べる」；再舉個例子，去哪裡的「去」，日文可以說成「行く」(いく)，語幹是「行」，語尾是「く」。<br><br>
+                </p>
+                <h3 align="right">動詞分類</h3>
+                <img src="images/ReadingDoodle.png" alt="" class="col-md-6 text-info h2 mt-2 mb-4 wow fadeInDown"
+                    data-wow-duration="3s">
+                <p>動詞大致上可依據語尾格式不同，分為以下五種：<br><br>
+                    <b>◆
+                        五段動詞：</b>語尾僅有一個假名，且該假名必為う、く、ぐ、す、つ、ぬ、ぶ、む、る這九種う(u)段假名之一。或者語尾是由あ(a)段假名接上る組成。因為會在あ、い、う、え、お這五段音上變化，故稱為五段動詞。(以ぬ結尾的動詞只有「死ぬ」一個)<br><br>
+                    <b>◆
+                        上一段動詞：</b>語尾必由い(i)段的假名接上る。或者是居る(いる)、射る(いる)、鋳る(いる)、着る(きる)、出来る(できる)、煮る(にる)、似る(にる)、干る(ひる)、見る(みる)這九個不分語幹、語尾的動詞。因為只會在い(i)段上變化，故稱為上一段動詞(う段的上一段就是い段)。<br><br>
+                    <b>◆
+                        下一段動詞：</b>語尾必由え(e)段的假名接上る。或者是得る(える)、寝る(ねる)、経る(へる)、出る(でる)這四個不分語幹、語尾的動詞。因為只會在え(e)段上變化，故稱為下一段動詞(う段的下一段就是え段)。<br><br>
+                    <b>◆ カ(ka)變動詞：</b>只有来る(くる)。因為只在か(ka)行上變化，所以稱為カ行變格動詞。<br><br>
+                    <b>◆ サ(sa)變動詞：</b>狹義上只有為る(する)這個動詞。廣義上是其它詞+する所形成的動詞。因為只在サ(sa)行上變化，所以稱為サ行變格動詞。<br><br>
+
+                    <div title="閱讀更多" onclick="turnoff('divturnoff');" class="
+expand mb-5 mt-5">閱讀更多<br>〡</div>
+                    <div id="divturnoff" style="display: none;">
+
+
+                        <br>
+                        <p><i>針對以上五個分類舉幾個動詞出來：</i><br><br>
+                            <br> <b class="bg">五段動詞</b><br><br>
+                            行く(いく)：去。<br>
+                            聞く(きく)：聽。<br>
+                            飲む(のむ)：喝。<br>
+                            吸う(すう)：吸。<br>
+                            習う(ならう)：學習。<br>
+                            始まる(はじまる)：開始。<br>
+                            教わる(おそわる)：受教於……<br>
+                            <br> <b class="bg"> 上一段動詞</b><br><br>
+                            見る(みる)：看。<br>
+                            起きる(おきる)：起床。<br>
+                            <br> <b class="bg"> 下一段動詞</b><br><br>
+                            食べる(たべる)：吃。<br>
+                            寝る(ねる)：睡覺。<br>
+                            <br> <b class="bg"> カ(ka)變動詞</b><br><br>
+                            来る(くる)：來。<br>
+                            <br> <b class="bg"> サ(sa)變動詞</b><br><br>
+                            為る(する)：做。<br>
+
+                            <h3>變化公式</h3>
+                            <img src="images/ZombieingDoodle.png" alt=""
+                                class="col-md-6 mt-2 mb-4 ml-5 pr-5 py-5 wow fadeInDown" data-wow-duration="3s">
+                            <p>原形動詞會依照其語氣和語意不同，而有語尾上的變化。<br>變化大抵可分為7種型態，分別為未然形(否定)、連用形、終止形、連體形、假定形、命令形、未然形(意志、意向)。<br>又根據動詞分類的不同，而有3套變化公式。<br><br>
+                                <br> <i>所謂「未然形」是指「未如此」、「未發生」的意思。</i><br>
+                                <br> <b class="bg">公式一：五段動詞</b><br><br>
+                                五段動詞的變化雖然有規則可尋，但因其變化在あ、い、う、え、お這五段音上，所以常被認為是最複雜的類型。五段動詞在變化的時候，會保留語尾最後一個假名的子音，只變化母音。舉例來說「く」(ku)若在「あ」(a)段上變化，就變成「か」(ka)；若在「い」(i)段上變化，就變成「き」(ki)，依此類推。但如果語尾最後一個假名是沒有子音的「う」，若在「あ」(a)段上變化，會加上w音，變成「わ」(wa)，至於其他段就直接變化即可。五段動詞型態變化方式如下：<br><br>
+                                <b>◆
+                                    未然形(否定)：</b>a + ない。舉例：行かない(いかない)，意思為「不去」。<br><br>
+                                <b>◆
+                                    連用形：</b>i + ます、ません、...、ましょう。舉例：行きます(いきます)，意思為「要去」(敬語)。<br><br>
+                                <b>◆
+                                    終止形：</b>u。同原形(字典形)。舉例：行く(いく)。<br><br>
+                                <b>◆
+                                    連體形：</b>u + ひと、こと、とき、ところ、もの(人、事、時、地、物)或其他名詞。舉例：行くところ(いくところ)，意思為「要去的地方」。<br><br>
+                                <b>◆
+                                    假定形：</b>e + ば...。舉例：行けば(いけば)...，意思為「如果要去的話...」。<br><br>
+                                <b>◆
+                                    命令形：</b>e。舉例：行け(いけ)，意思為「去！」。<br><br>
+                                <b>◆
+                                    未然形(意志)：</b>o + う。要念長音。舉例：行こう(いこう)，意思為「去吧！(走吧！)」。<br><br>
+
+                                <br> <b class="bg">公式二：上一段動詞、下一段動詞</b><br><br>
+                                上一段動詞和下一段動詞的變化最為簡單，只要去掉語尾最後的「る」，再加上五段動詞公式一變化時需要加的字即可。上一段動詞和下一段動詞的變化方式如下：<br><br>
+                                <b>◆
+                                    未然形(否定)：</b>去る + ない。舉例：起きない(おきない)，意思為「不起床」。<br><br>
+                                <b>◆
+                                    連用形：</b>去る + ます、ません、...、ましょう。舉例：起きます(おきます)，意思為「要起床」(敬語)。<br><br>
+                                <b>◆
+                                    終止形：</b>同原形(字典形)。舉例：起きる(おきる)。<br><br>
+                                <b>◆
+                                    連體形：</b>原形(字典形) +
+                                ひと、こと、とき、ところ、もの(人、事、時、地、物)或其他名詞。舉例：起きるとき(おきるとき)，意思為「要起床的時候」。<br><br>
+                                <b>◆
+                                    假定形：</b>去る + れば...。舉例：起きれば(おきれば)...，意思為「如果起床的話...」。<br><br>
+                                <b>◆
+                                    命令形：</b>去る + ろ(口語體)、よ(文章體)。舉例：起きろ(おきろ)，意思為「起床！」。<br><br>
+                                <b>◆
+                                    未然形(意志)：</b>去る + よう。要念長音。舉例：起きよう(おきよう)，意思為「起床吧！」。<br><br>
+
+                                <br> <b class="bg">公式三：カ變動詞、サ變動詞</b><br><br>
+                                カ變動詞和サ變動詞的變化沒有規則性，但是只要照著型態順序把以下口訣念熟，相信變化起來也不會太難。<br><br>
+                                カ變動詞口訣：こ き くる くる くれ こい。<br>
+                                サ變動詞口訣：さ せ し し する する すれ しろ せよ。<br><br>
+                                <b><i>カ變動詞變化方式</i></b><br><br>
+                                <b>◆
+                                    未然形(否定)：</b>こ + ない。舉例：来ない(こない)，意思為「不來」。<br><br>
+                                <b>◆
+                                    連用形：</b>き + ます、ません、...、ましょう。舉例：来ます(きます)，意思為「要來」(敬語)。<br><br>
+                                <b>◆
+                                    終止形：</b>同原形(字典形)。舉例：来る(くる)，意思為「來」。<br><br>
+                                <b>◆
+                                    連體形：</b>原形(字典形) + ひと(人)或其他名詞。舉例：来るひと(くるひと)，意思為「來的人」。<br><br>
+                                <b>◆
+                                    假定形：</b>くれ + ば...。舉例：来れば(くれば)...，意思為「如果來的話...」。<br><br>
+                                <b>◆
+                                    命令形：</b>こい。舉例：来い(こい)，意思為「快來！」。<br><br>
+                                <b>◆
+                                    未然形(意志)：</b>こ + よう。要念長音。舉例：来よう(こよう)，意思為「來吧！」。<br><br>
+                                <b><i>サ變動詞變化方式</i></b><br><br>
+                                <b>◆
+                                    未然形(否定)：</b>文言：さ + ん、ぬ 或 せ + ん、ぬ。白話：し + ない。舉例：しない，意思為「不做」。<br><br>
+                                <b>◆
+                                    連用形：</b>し + ます、ません、...、ましょう。舉例：します，意思為「做」(敬語)。<br><br>
+                                <b>◆
+                                    終止形：</b>同原形(字典形)。舉例：為る(する)，意思為「做」。<br><br>
+                                <b>◆
+                                    連體形：</b>原形(字典形) + こと(事)或體言。舉例：為ること(すること)，意思為「做事」。<br><br>
+                                <b>◆
+                                    假定形：</b>すれ + ば...。舉例：すれば...，意思為「如果做的話...」。<br><br>
+                                <b>◆
+                                    命令形：</b>しろ(口語體)、せよ(文章體)。舉例：しろ，意思為「快做！」。<br><br>
+                                <b>◆
+                                    未然形(意志)：</b>し + よう。要念長音。舉例：しよう，意思為「做吧！」。<br><br>
+                                <br> <b class="bg">音變</b><br><br>
+                                只有非さ(sa)行(語尾最後一個假名為す)的五段動詞才會有音變，當這類的五段動詞連用形後接過去式助動詞た或是接續助詞て、ては、たも、たん、たつて時，習慣上會自然省略連用形帶i母音的假名，而形成促音變、鼻音變或是イ(i)音變。<br><br>
+                                <br> <b class="bg">促音變</b><br><br>
+                                當原形動詞語尾最後一個假名是う、つ、る時，會發生促音變。省略語尾最後的う、つ或る，以「っ」促音代替。或者可以想成，當動詞連用形帶的i母音假名是い、ち、り時，省略い、ち或り，以「っ」促音代替。以下舉幾個例子：<br><br>
+                                <b>◆
+                                    使う(つかう)：</b>使用。連用形是「使い(つかい) + ます、ません、...、ましょう」。過去式是「使った」(つかった)。<br><br>
+                                <b>◆
+                                    待つ(まつ)：</b>等待。連用形是「待ち(まち) + ます、ません、...、ましょう」。過去式是「待った」(まった)。<br><br>
+                                <b>◆
+                                    乗る(のる)：</b>乘坐。連用形是「乗り(のり) + ます、ません、...、ましょう」。過去式是「乗った」(のった)。<br><br>
+                                <br> <b class="bg">鼻音變</b><br><br>
+                                當原形動詞語尾最後一個假名是ぬ、ぶ、む時，會發生鼻音變。省略語尾最後的ぬ、ぶ或む，以「ん」鼻音代替。或者可以想成，當動詞連用形帶的i母音假名是に、び、み時，省略に、び或み，以「ん」鼻音代替。且「ん」之後接的那一個假名會變成濁音。以下舉幾個例子：<br><br>
+                                <b>◆
+                                    死ぬ(しぬ)：</b>死。連用形是「死に(しに) + ます、ません、...、ましょう」。過去式是「死んだ」(しんだ)。<br><br>
+                                <b>◆
+                                    呼ぶ(よぶ)：</b>呼喚。連用形是「呼び(よぶ) + ます、ません、...、ましょう」。過去式是「呼んだ」(よんだ)。<br><br>
+                                <b>◆
+                                    飲む(のむ)：</b>喝。連用形是「飲み(のみ) + ます、ません、...、ましょう」。過去式是「飲んだ」(のんだ)。<br><br>
+                                <br> <b class="bg">イ音變</b><br><br>
+                                當原形動詞語尾最後一個假名是く或ぐ時，會發生イ音變。省略語尾最後的く或ぐ，以「い」代替。或者可以想成，當動詞連用形帶的i母音假名是き或ぎ時，省略き或ぎ，以「い」代替。若是省略了ぐ(ぎ)，其濁音需下移到「い」之後接的那一個假名。以下舉幾個例子：<br><br>
+                                <b>◆
+                                    書く(かく)：</b>寫。連用形是「書き(かき) + ます、ません、...、ましょう」。過去式是「書いた」(かいた)。<br><br>
+                                <b>◆
+                                    急ぐ(いそぐ)：</b>趕。連用形是「急ぎ(いそぎ) + ます、ません、...、ましょう」。過去式是「急いだ」(いそいだ)。<br><br>
+                                イ音變有個唯一的例外，那就是「行く」(いく)。照上面寫的變化方式來看，它確實是屬於イ音變才對。但實際上「行く」這個詞卻是促音變，如果拿它的過去式舉例，「行く」就會變成「行った」(いった)，而不是「行いた」(いいた，多難念啊)。<br><br>
+                            </p>
+                            <br> <br><b class="bg h4">動詞變化十八式</b><br><br>
+                            日本的動詞在不同時式(現在、過去、意志邀約、無意志未來(推測過去、推測未來))、語態(常體、敬體)、語氣(肯定、否定)，可有5*2*2=20種組合，但意志邀約並沒有否定語氣，所以只剩下18種組合，稱為「動詞十八式」。<br><br>
+                            <p>以「行く」(いく)舉例，變化方式如下：</p>
+                            <b>◆ 現在式 - 肯定 - 常體：</b>
+                            即為原形(字典形)。<br>
+                            例如：「行く」。(去)<br><br>
+                            <b>◆ 現在式 - 肯定 - 敬體：</b>
+                            連用形 + ます。<br>
+                            例如：「行きます」。(要去)<br><br>
+                            <b>◆ 現在式 - 否定 - 常體：</b>
+                            未然形(否定) + ない。<br>
+                            例如：「行かない」。(不去)<br><br>
+                            <b>◆ 現在式 - 否定 - 敬體：</b>
+                            連用形 + ません。<br>
+                            例如：「行きません」。(不要去)<br><br>
+                            <b>◆ 過去式 - 肯定 - 常體：</b>
+                            連用形 + 過去式助動詞た。<br>
+                            例如：「行った」。(去了)<br><br>
+                            <b>◆ 過去式 - 肯定 - 敬體：</b>
+                            連用形 + ました。<br>
+                            例如：「行きました」。(去過了)<br><br>
+                            <b>◆ 過去式 - 否定 - 常體：</b>
+                            未然形(否定) + なかった(「ない」去「い」再加「かった」)。<br>
+                            例如：「行かなかった」。(沒有去)<br><br>
+
+                            <b>◆ 過去式 - 否定 - 敬體：</b>
+                            連用形 + ませんでした。<br>
+                            例如：「行きませんでした」。(沒有去過)<br><br>
+                            <b>◆ 意志邀約 - 肯定 - 常體：</b>
+                            未然形(意志) + う。<br>
+                            例如：「行こう」。(去吧！)<br><br>
+                            <b>◆ 意志邀約 - 肯定 - 敬體：</b>
+                            連用形 + ましょう。<br>
+                            例如：「行きましょう」。(一起去吧！)<br><br>
+                            <b>◆ 無意志未來(推測未來) - 肯定 - 常體：</b>
+                            原形(字典形) + だろう。<br>
+                            例如：「行くだろう」。(要去吧！)<br><br>
+                            <b>◆ 無意志未來(推測未來) - 肯定 - 敬體：</b>
+                            原形(字典形) + でしょう。<br>
+                            例如：「行くでしょう」。(要去吧！)<br><br>
+                            <b>◆ 無意志未來(推測未來) - 否定 - 常體：</b>
+                            未然形(否定) + ない + だろう。<br>
+                            例如：「行かないだろう」。(不去吧！)<br><br>
+                            <b>◆ 無意志未來(推測未來) - 否定 - 敬體：</b>
+                            未然形(否定) + ない + でしょう。<br>
+                            例如：「行かないでしょう」。(不要去吧！)<br><br>
+                            <b>◆ 無意志未來(推測過去) - 肯定 - 常體：</b>
+                            連用形 + 過去式助動詞た + だろう。<br>
+                            例如：「行っただろう」。(去過了吧！)<br><br>
+                            <b>◆ 無意志未來(推測過去) - 肯定 - 敬體：</b>
+                            連用形 + 過去式助動詞た + でしょう。<br>
+                            例如：「行ったでしょう」。(有去過了吧！)<br><br>
+                            <b>◆ 無意志未來(推測過去) - 否定 - 常體：</b>
+                            未然形(否定) + なかった(「ない」去「い」再加「かった」) + だろう。<br>
+                            例如：「行かなかっただろう」。(沒去過吧！)<br><br>
+                            <b>◆ 無意志未來(推測過去) - 否定 - 敬體：</b>
+                            未然形(否定) + なかった(「ない」去「い」再加「かった」) + でしょう。<br>
+                            例如：「行かなかったでしょう」。(沒有去過吧！)<br><br>
+                    </div>
+            </div>
+        </div>
+        <!-- 資訊欄 -->
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col pt-3 mb-0 text-center footbg">
+                <p>&copy; 2019 EZ Learn</p>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/modal-video/js/modal-video.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+</body>
+
+</html>
